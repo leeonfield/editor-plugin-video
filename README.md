@@ -115,7 +115,7 @@ const viewer = new Viewer({
 ### embed video in markdown
 
 ````
-``` youtbe
+``` youtube
 GveTAk727mM
 ```
 ````
