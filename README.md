@@ -1,9 +1,14 @@
-# TOAST UI Editor : Video Plugin
+# Video Plugin for TOAST UI Editor
 
-> This is a plugin of [TOAST UI Editor](https://github.com/nhn/tui.editor/tree/master/apps/editor) to display video in Editor
+> This is a plugin of [TOAST UI Editor](https://github.com/nhn/tui.editor/tree/master/apps/editor) to embed video in Editor
 
 [![npm version](https://img.shields.io/npm/v/@leeonfield/editor-plugin-video.svg)](https://www.npmjs.com/package/@leeonfield/editor-plugin-video)
 
+## Support video list
+- [x] [YouTube](http://youtube.com/)
+- [x] [Tecent Video](http://v.qq.com/)
+- [x] [Bilibili](http://bilibili.com/)
+- [x] [Youku](http://youku.com/)
 
 ## 📦 Usage npm
 
@@ -19,9 +24,6 @@ $ npm install @leeonfield/editor-plugin-video -S
 
 ### Import Plugin
 
-Along with the plugin, the plugin's dependency style must be imported. 
-The `code-syntax-highlight` plugin has [`highlight.js`](https://highlightjs.org/) as a dependency, and you need to add a CSS file of `highlight.js`.
-
 #### ES Modules
 
 ```js
@@ -31,14 +33,27 @@ import videoPlugin from '@leeonfield/editor-plugin-video';
 #### CommonJS
 
 ```js
-require('highlight.js/styles/github.css');
-
 const videoPlugin = require('@leeonfield/editor-plugin-video');
 ```
 
-#### With Viewer
+#### Use in Editor
 
-As with creating an editor instance
+```js
+// ...
+
+import Editor from '@toast-ui/editor';
+import videoPlugin from '@leeonfield/editor-plugin-video';
+
+const editor = new Editor({
+  // ...
+  plugins: [videoPlugin]
+});
+
+```
+
+
+
+#### Use in Viewer
 
 ```js
 // ...
@@ -69,4 +84,30 @@ const viewer = Editor.factory({
   viewer: true,
   plugins: [videoPlugin]
 });
+```
+
+### Custom Video list
+
+
+```js
+// ...
+
+import Viewer from '@toast-ui/editor/dist/toastui-editor-viewer';
+import videoPlugin from '@leeonfield/editor-plugin-video';
+
+// ...
+
+const viewer = new Viewer({
+    // ...
+    plugins: [
+      [
+        videoPlugin,
+        {
+          list: {
+            youtube: 'http://player.youku.com/embed/',
+          },
+        },
+      ],
+    ],
+  });
 ```
