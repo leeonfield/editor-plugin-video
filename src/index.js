@@ -16,8 +16,8 @@ const renderVideo = (wrapperId, sourceId, type, videoMap) => {
 };
 
 export default function videoPlugin(editor, options = {}) {
+  const vList = options.list || {};
   const { codeBlockManager } = Object.getPrototypeOf(editor).constructor;
-  const vList = options.vList || {};
   const videoMap = {
     ...defaultList,
     ...vList,
