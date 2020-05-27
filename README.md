@@ -46,7 +46,6 @@ As with creating an editor instance
 import Viewer from '@toast-ui/editor/dist/toastui-editor-viewer';
 import videoPlugin from '@leeonfield/editor-plugin-video';
 
-// Import highlgiht.js
 // ...
 
 const viewer = new Viewer({
@@ -63,7 +62,6 @@ or
 import Editor from '@toast-ui/editor';
 import videoPlugin from '@leeonfield/editor-plugin-video';
 
-// Import highlgiht.js
 // ...
 
 const viewer = Editor.factory({
