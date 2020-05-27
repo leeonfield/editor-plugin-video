@@ -25,7 +25,7 @@
     "type": "git",
     "url": "git+https://github.com/leeonfield/editor-plugin-video.git"
   },
-  "author": "leeon",
+  "author": "leeonfield",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/leeonfield/editor-plugin-video/issues"
