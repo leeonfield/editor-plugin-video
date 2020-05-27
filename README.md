@@ -4,11 +4,11 @@
 
 [![npm version](https://img.shields.io/npm/v/@leeonfield/editor-plugin-video.svg)](https://www.npmjs.com/package/@leeonfield/editor-plugin-video)
 
-## Support video list
-- [x] [YouTube](http://youtube.com/)
-- [x] [Tecent Video](http://v.qq.com/)
-- [x] [Bilibili](http://bilibili.com/)
-- [x] [Youku](http://youku.com/)
+## Support video list and code language
+- [x] [YouTube](http://youtube.com/): youtube
+- [x] [Tecent Video](http://v.qq.com/): qq
+- [x] [Bilibili](http://bilibili.com/): bilibili
+- [x] [Youku](http://youku.com/): youku
 
 ## 📦 Usage npm
 
@@ -110,4 +110,12 @@ const viewer = new Viewer({
       ],
     ],
   });
+```
+
+### embed video in markdown
+
+```
+\`\`\` youtbe
+GveTAk727mM
+\`\`\`
 ```
