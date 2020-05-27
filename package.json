@@ -13,7 +13,7 @@
     "bilibili",
     "youtube"
   ],
-  "description": "TOAST UI Editor : Video Plugin",
+  "description": "Video Plugin for TOAST UI Editor",
   "main": "dist/toastui-editor-plugin-video.js",
   "files": [
     "dist/*.js"
