@@ -5,10 +5,15 @@
 [![npm version](https://img.shields.io/npm/v/@leeonfield/editor-plugin-video.svg)](https://www.npmjs.com/package/@leeonfield/editor-plugin-video)
 
 ## Support video list and code language
-- [x] [YouTube](http://youtube.com/): youtube
-- [x] [Tecent Video](http://v.qq.com/): qq
-- [x] [Bilibili](http://bilibili.com/): bilibili
-- [x] [Youku](http://youku.com/): youku
+- embed iframe
+  - [x] [YouTube](http://youtube.com/): youtube
+  - [x] [Tecent Video](http://v.qq.com/): qq
+  - [x] [Bilibili](http://bilibili.com/): bilibili
+  - [x] [Youku](http://youku.com/): youku
+- video source
+  - [x] Mp4: source-mp4
+  - [x] OGG: source-ogg
+  - [x] Youku: source-avi
 
 ## 📦 Usage npm
 
@@ -117,5 +122,12 @@ const viewer = new Viewer({
 ````
 ``` youtube
 GveTAk727mM
+```
+````
+
+### video source
+````
+```source-mp4
+video-source
 ```
 ````
